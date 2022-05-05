@@ -109,3 +109,48 @@ header .menu{
 .quem-somos img{
    min-width: 450px;
 }
+
+.container-externo{
+   background-color: #122A57;
+   width: 100%;
+}
+#servicos{
+   flex-direction: column;
+}
+
+#servicos h2{
+   color: #fff;
+   font-family: 32px;
+   margin-bottom: 10px;
+}
+
+.services-list{
+   display: flex;
+   justify-content: space-around;
+   padding: 100px 0;
+}
+
+.service-item{
+   text-align: center;
+}
+.service-item a{
+   width: 220px;
+   background-color: #fff;
+   border-radius: 30px;
+   height: 50px;
+   text-align: center;
+   line-height: 50px;
+   margin-top: 20px;
+   padding: 5px;
+   font-size: 14px;
+   color: #122A57;
+   text-decoration: none;
+
+}
+
+.service-item p{
+   font-weight: 700;
+   font-size: 15px;
+   color: #fff;
+   margin-top: 20px;
+}
