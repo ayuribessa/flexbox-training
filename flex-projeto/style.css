@@ -24,6 +24,8 @@ div img{
    max-width: 992px;
    margin: auto;
    width: 100%;
+   min-width: 320px;
+   padding: 10px 15px;
 }
 /* Header section */
 header {
@@ -233,6 +235,8 @@ header .menu{
    margin-right: 10px;
 }
 
+/*footer section*/
+
 footer {
    background-color: #122A57;
    height: 70px;
@@ -245,3 +249,45 @@ footer .footer{
   color: #fff;
 }
 
+/* mobile section */
+@media(max-width: 992px){
+   .flex-container{
+      flex-direction: column;
+   } 
+
+   .apresentacao{
+      flex-direction: column-reverse;
+   }
+
+   .apresentacao .texto-apresentacao{
+      width: 100%;
+   }
+
+   .quem-somos{
+      flex-direction: column-reverse;
+   }
+
+   .quem-somos img{
+      min-width: 320px;
+      margin: auto;
+   }
+
+   .services-list{
+      flex-direction: column;
+   }
+
+   .service-item img{
+      width: 50%;
+      margin: auto;
+   }
+
+   .plans-list{
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .plans-list .plans-item{
+      max-width: 90%;
+      margin: auto;
+      width: 100%;
+   }
+}
