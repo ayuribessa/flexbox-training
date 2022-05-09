@@ -25,7 +25,7 @@ div img{
    margin: auto;
    width: 100%;
 }
-
+/* Header section */
 header {
    background-color: #122A57;
    height: 100px;
@@ -49,7 +49,7 @@ header .list-items{
 header .menu{
    justify-content: space-between;
 }
-
+/*Apresentação section */
 .apresentacao{
    height: 100vh;
    align-items: center;
@@ -66,7 +66,7 @@ header .menu{
    margin-bottom: 10px;
 }
 
-.apresentacao a{
+.btn{
    background-color: #122A57;
    color: #fff;
    text-align: center;
@@ -79,6 +79,7 @@ header .menu{
    
 }
 
+/* quem somos section */
 .quem-somos{
    align-items: center;
    justify-content: space-between;
@@ -110,6 +111,7 @@ header .menu{
    min-width: 450px;
 }
 
+/* services section */
 .container-externo{
    background-color: #122A57;
    width: 100%;
@@ -160,4 +162,73 @@ header .menu{
 .service-item img{
    width: 80%;
    margin: auto;
+}
+
+/* Planes Section */
+
+#plans{
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+#plans h2{
+   font-size: 32px;
+}
+
+.plans-list{
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+   padding-top: 50px;
+}
+
+.plans-item{
+
+   flex: 1;
+   border: 5px solid #122A57;
+   margin-right: 20px;
+   padding: 10px;
+   max-width: 240px;
+}
+
+.plans-item .btn{
+   margin: auto;
+   margin-bottom: 20px;
+}
+
+.plans-item h3{
+   font-size: 24px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+
+.plans-item h3::after{
+   content: "";
+   background-color: #122A57;
+   width: 100%;
+   height: 3px;
+   margin-top: 15px;
+   margin-bottom: 10px;
+}
+
+.plans-item ul{
+   padding: 10px 20px;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 10px;
+}
+
+.plans-item ul li{
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+}
+
+.plans-item ul li::before{
+   content: "";
+   width: 10px;
+   height: 10px;
+   background-color: #122A57;
+   margin-right: 10px;
 }
